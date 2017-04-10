@@ -18,12 +18,12 @@ Oidc.Log.logger = console;
 Oidc.Log.level = Oidc.Log.INFO;
 
 var settings = {
-    authority: 'http://localhost:5000/oidc',
-    client_id: 'js.tokenmanager',
-    redirect_uri: 'http://localhost:5000/oidc-client-sample.html',
-    post_logout_redirect_uri: 'http://localhost:5000/oidc-client-sample.html',
+    authority: 'https://connect-qat.fanmiles.com/',
+    client_id: '777eed8f5945d583347fae77',
+    redirect_uri: 'https://www.example.com:5000/oidc-client-sample.html',
+    post_logout_redirect_uri: 'https://www.example.com:5000/oidc-client-sample.html',
     response_type: 'id_token token',
-    scope: 'openid email roles',
+    scope: 'openid profile',
 
     filterProtocolClaims: true,
     loadUserInfo: true
